@@ -42,8 +42,8 @@ const objectCounter = (voters) => {
     // write your code here
     return voters.reduce((accumulator, currentValue, currentIndex) => {
         let index = currentIndex;
-        return index+ 1 ;
-       }, 0);
+        return index + 1;
+    }, 0);
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -66,8 +66,8 @@ const stringReverse = (str) => {
     // write your code here
     let result = "";
     let strArr = str.split(" ");
-    for(let i = strArr.length -1 ; i >= 0 ;i-- ) {
-        i == 0 ?  result += strArr[i] : result += strArr[i] + " ";
+    for (let i = strArr.length - 1; i >= 0; i--) {
+        i == 0 ? result += strArr[i] : result += strArr[i] + " ";
     }
     return result;
 }
@@ -117,7 +117,7 @@ const statistics = (obj) => {
     return obj.reduce((accumulator, currentValue) => {
         if (accumulator[currentValue.votes_To]) {
             accumulator[currentValue.votes_To]++;
-        } else {    
+        } else {
             accumulator[currentValue.votes_To] = 1;
         }
         return accumulator;
