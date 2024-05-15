@@ -24,7 +24,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function equalizeArray(arr) {\n    // Write your code here\n    let max = 0\n    let length = arr.length\n    arr.sort((a, b) => a - b);\n    let i = 0;\n    while (arr.length > 0) {\n        let elementCount = arr.lastIndexOf(arr[i]) - arr.indexOf(arr[i]) + 1;\n        if (elementCount > max) {\n            max = elementCount;\n        }\n        arr.splice(i, elementCount)\n    }\n\n    return length - max\n}"
             ],
             "outputs": []
         },
